@@ -46,11 +46,11 @@ public class NOAAFileProcessor {
         }
 
         String dataDirectory = args[0];
-        String outputDirectory;
+        String outputDirectory = null;
 
         if (args.length == 2)
             outputDirectory = args[1];
-        )
+
 
         List<String> dirs = directoryList(dataDirectory);
 
