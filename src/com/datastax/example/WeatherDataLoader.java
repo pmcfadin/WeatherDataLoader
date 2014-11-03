@@ -128,7 +128,7 @@ public class WeatherDataLoader {
 
         session = cluster.connect("isd_weather_data");
 
-        PreparedStatement weatherDataInsertStatement = session.prepare("INSERT INTO raw_weather_data (weather_station, year, month, day, hour, temperature, dewpoint, pressure, wind_direction, wind_speed, sky_condition, one_hour_precip, six_hour_precip) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
+        PreparedStatement weatherDataInsertStatement = session.prepare("INSERT INTO raw_weather_data (wsid, year, month, day, hour, temperature, dewpoint, pressure, wind_direction, wind_speed, sky_condition, one_hour_precip, six_hour_precip) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
 
         weatherDataInsert = new BoundStatement(weatherDataInsertStatement);
 
