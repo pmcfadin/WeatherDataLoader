@@ -62,8 +62,6 @@ public class NOAAFileProcessor {
             }
         }
 
-        processDirectory(fileList("/Users/patrick/projects/weather_data/2005/US_Data"), "/Users/patrick/projects/weather_data/");
-
     }
 
     static void processDirectory(List<String> files, String path) {
