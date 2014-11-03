@@ -12,7 +12,7 @@ use isd_weather_data;
 Weather stations that correspond with collected raw weather data.
 You can load this data by using the stations.csv file and the following copy command:
 
-COPY weather_station (id, name, country_code, call_sign, lat, long, elevation) FROM 'stations.csv';
+COPY weather_station (id, name, country_code, state_code, call_sign, lat, long, elevation) FROM 'stations.csv';
 
 */
 
